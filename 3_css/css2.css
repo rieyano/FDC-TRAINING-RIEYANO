@@ -1,0 +1,102 @@
+.welcome{
+  color:white;
+  text-align:left;
+  padding:25px 30px 25px 30px;
+  
+}
+
+#top{
+  background-color:green;
+}
+
+.menuitem1{
+  background-color: greenyellow;
+  display: block;
+  margin:5px 30px 5px 5px;
+  padding:3px 150px 3px 150px;
+  text-align: left
+  line-height:3;
+  border-radius: 3px;
+}
+
+.menuitem{
+
+  display: block;
+  margin:5px 30px 5px 5px;
+  padding:3px 150px 3px 150px;
+  text-align: left
+  line-height:3;
+  border-radius: 3px;
+  background-color:lightgray;
+}
+
+h1{
+  font-size: 25px;
+}
+
+p{
+  font-size: 14px;
+}
+
+.f-container{
+	display:flex;	
+}
+
+#bottom{
+  background-color:lightgrey;
+  text-align:center;
+  margin: 2px 2px;
+  padding:20px 20px;
+}
+
+#greenbutton{
+  background-color: greenyellow;
+  margin:3px 3px 3px 3px;
+  padding:2px 30px 2px 30px;
+  text-align: left;
+  display: flex;
+  border-radius:  5px;
+  border: 0;
+  
+  }
+
+#orangebutton{
+  background-color: coral;
+  margin:3px 3px 3px 3px;
+  padding:2px 30px 2px 30px;
+  text-align: left;
+  display: flex;
+  border-radius:  5px;
+  border: 0;
+}
+
+#bluebutton{
+  background-color: deepskyblue;
+  margin:3px 3px 3px 3px;
+  padding:2px 30px 2px 15px;
+  text-align: left;
+  display: flex;
+  border-radius:  5px;
+  border: 0;
+}
+
+#redbutton{
+  background-color: deeppink;
+  margin:3px 3px 3px 3px;
+  padding:2px 30px 2px 15px;
+  text-align: left;
+  display: flex;
+  border-radius:  5px;border: 0;
+
+}
+
+.f-box {
+  display: flex;
+  }
+.f-box div button {
+  border:0;
+}
+
+.button{
+  border-radius:  5px;
+}
