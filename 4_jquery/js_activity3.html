@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+var myStack = [];
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(1000);
+myStack.unshift(101);
+myStack.unshift(102);
+myStack.pop();
+myStack.pop();
+myStack.pop();
+myStack.push(200);
+myStack.shift();
+
+console.log(myStack.pop(200));
+
+console.log (myStack[2]);
+
+console.log (myStack.length / 2 + 0.5);
+
+var splice = myStack.splice(3,4);
+console.log (myStack.splice(3,4));
+
+console.log (myStack.length);
+
+
+
+
+
+//1. 2nd to the last element
+//2. 3rd element
+//3. middle element of an array
+//4. splice the 3rd element of an array
+//5. length of the array
+
+</script>
+</html>
