@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form>
+      1st.Number<input type="text" id="firstNumber"><br>
+      2nd.Number<input type="text" id="secondNumber"><br>
+  </form>
+  <hr>
+  <button onclick="calculate('product');">Multiply</button>
+  <button onclick="calculate('quotient');">Divide</button>
+  <button onclick="calculate('sum');">Add</button>
+  <button onclick="calculate('difference');">Substract</button>
+  <hr>
+  <div id="result">Result</div>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+function calculate(x) {
+  //alert("Prameta is "+ x);
+  let i = parseInt(document.getElementById('firstNumber').value);
+  let j = parseInt(document.getElementById('secondNumber').value);
+
+
+
+let str;
+switch(x){
+  case 'product':
+    str = i + "*" + j + "=" + (i * j);
+  break;
+  case 'quotient':
+    str = i + "/" + j + "=" + (i / j);
+  break;
+  case 'sum':
+    str = i + "+" + j + "=" + (i + j);
+  break;
+  case   'difference':
+    str = i + "-" + j + "=" + (i - j);
+  break;
+}
+  
+document.getElementById('result').innerHTML = str;
+}
+
+</script>
+</html>
