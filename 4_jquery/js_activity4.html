@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+const x = ["kimuchi","muangthai","konan","xjapan"] // my favarite food,sports,cartoons,music....
+
+//const x = [];
+if (x.length === 0) {
+  console.log ("True");
+} else {
+  console.log ("False");
+}
+
+console.log (x[0]);
+console.log (x[x.length-1]);
+x.pop();
+x.push ("Karl sensei");
+console.log (x);
+
+
+
+console.log (300 - 200);
+console.log (300 + 700);
+
+const score = -0; //scoreを入れる 例) 0, -1, 1000,　
+if (score === 100){
+  console.log ("You got perfect score!"); //100
+} else if (80 <= score && 100 > score) { 
+  console.log ("You are doing great!"); //80-99
+} else if (65 <= score && 80 > score ) {
+  console.log ("You need more practice!"); //65-79
+} else if (0 <= score  && 65 > score) {
+  console.log ("You failed!"); //0-64
+} else {
+  console.log ("Score accepted is from 0 to 100 only");
+}
+
+
+</script>
+</html>
