@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+
+let employees = ["Rie", "Hitomi", "Yuusuke", "Ryou","Rie2"];
+let hours = [3, 18, 16, 20,25];
+let earnings = [5, 9, 7, 10,15];
+
+function salary (name,hours,earnings_per_hour){
+  
+  return hours * earnings_per_hour;
+
+}
+
+
+for(let i=0; i < employees.length; i++){
+  console.log("Name: " + employees[i]);
+  console.log("hours:" + hours[i]);
+  console.log("earnings: " + earnings[i]);
+  console.log("salary: "+salary(employees[i],hours[i],earnings[i]));
+}
+
+
+
+
+
+
+
+for (let number =1; number <= 100; number +=1) {
+  if (number % 2 === 0) {
+    console.log ("even")
+  } else  {
+    console.log ("odd")
+  }
+  console.log (number);
+}
+
+
+
+
+
+
+
+//my practice1
+for (let number =1; number <= 10; number +=1) {
+  console.log (number);
+}
+
+//my practice2
+for (let number =10; number >= 1; number -=1) {
+  console.log (number);
+}
+
+//my practice3
+for (let number = 100; number <= 120; number +=1){
+  console.log (number);
+}
+
+//my practice4
+for (let number = 120; number >= 1; number -=1){
+  console.log (number);
+}
+
+
+//my practice5
+function multi (x,y){
+  
+return x * y ;
+
+}
+
+console.log(multi(4,5));
+ 
+
+//my practice6
+function rate_crowd(person, seat) {
+  let r = (person ) / seat;
+  return r * 100;
+}
+console.log(rate_crowd(60, 50));
+
+let seat_kita = 50
+let persons = [60,70,48];
+//let i = rate_crowd(persons[2],seat_kita)
+//console.log("evening"+ rate_crowd(persons[2],seat_kita))
+
+console.log("morning:"+ rate_crowd(persons[0],seat_kita))
+console.log("afternoon:"+ rate_crowd(persons[1],seat_kita))
+console.log("evening:"+ rate_crowd(persons[2],seat_kita))
+
+
+
+</script>
+</html>
+
+
+
+
+
+
