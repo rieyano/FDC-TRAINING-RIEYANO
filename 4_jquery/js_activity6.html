@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="true">我不要做作业！！</h1>
+  <h1 id="lie">开玩笑！！</h1>
+</body>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$("#true").hide();
+$("#true").fadeIn(7500);
+$("#true").slideUp(4500);
+$("#lie").hide().delay(5000).fadeIn(10000);
+//exam_1
+
+let n = 100;
+//pushの時に利用したいから先に空の配列[]を用意する。
+let seq = [];
+
+for (let i = 0; i < n; i++){
+  let j; 
+  if (i === 0){
+    j = 0;
+  } else if (i === 1){
+    j = 1;
+  } else {
+    j = seq[i-2]+seq[i-1];
+  }
+  seq.push(j);
+}
+console.log(seq);
+
+
+//exam_2
+
+let x = "latin";
+let y;
+y = x.substring(1) + x.charAt(0) + "ay"
+console.log(y);
+//41-44はテスト用
+
+
+function isv(word) {
+  switch (word.charAt(0)){
+    case "a":
+    case "e":
+    case "i":
+    case "o":
+    case "u":
+      return true;
+      break;
+    default:
+      return false; 
+      break;
+  }
+}
+
+let z = "are";
+let result;
+ 
+if (isv(z)){
+  result = z + "ay";
+} else {
+  result  = z.substring(1) + z.charAt(0) + "ay"
+}
+console.log(result);
+
+
+
+//Thank you!
+const call = (xxx) => {
+  console.log("Thank you for teaching me! Karl sensei and Lester sensei ");
+  xxx();
+};
+//const callという名のメソッド（関数）を使用してる
+//
+//通信して、何か処理が終わった後になんか出す時に使用する
+
+call (() =>{
+  console.log("I enjoyed studying Javascript with you!");
+});
+//call (() =>{console.log("I enjoyed studying Javascript with you!");});
+//callの（）の中に関数が入っている
+
+
+
+</script>
+</html>
