@@ -50,6 +50,32 @@ console.log (myStack.length);
 
 
 
+//配列の中にオブジェクトを入れて、それを繰り返しを使って取り出す。
+
+const characters = [
+  {name: "Yamada", age: 14},
+  {name: "Sato", age: 100},
+  {name: "Sasaki", age: 5},
+];
+
+// for文を完成
+for (let i = 0; i < characters.length ; i++) {
+  console.log("");
+  const character = characters[i];
+  // 定数characterを定義
+  
+  console.log(`名前は{character.name}です`);
+  // 「名前は〇〇です」を出力
+  
+  console.log(`${characters[i].age}歳です`);
+  // 「〇〇歳です」を出力
+  
+  
+}
+
+
+
+
 //1. 2nd to the last element
 //2. 3rd element
 //3. middle element of an array

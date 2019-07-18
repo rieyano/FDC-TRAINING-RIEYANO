@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <input type="text" id="fdc_textbox">
+    <input type="checkbox" id="fdc_checkbox">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "#fdc_textbox" ).change(function() {
+      let text = $( "#fdc_textbox" ).val();
+      if ("fdc" === text ){
+        $("#fdc_checkbox").prop('checked', true);
+      } else {
+        $("#fdc_checkbox").prop('checked', false);
+      }
+    });
+  });
+  //これが正式の書き方！
+</script>
+</body>
+</html>

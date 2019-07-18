@@ -62,18 +62,23 @@ function isv(word) {
 
 let z = "are";
 let result;
- 
+//resultはあとで使うのでとりあえず空の箱を用意しておく
+//let z = "are";は、function isv(word)に入って
+//if (isv(z)) には、let z = "are"; が入る
+
 if (isv(z)){
   result = z + "ay";
 } else {
   result  = z.substring(1) + z.charAt(0) + "ay"
 }
 console.log(result);
-
-
+//result = z + "ay"; は、functionのswitch (word.charAt(0)) switchで母音の判断をして、後ろに”ay’がくっつく。
+//elseのresultは、　result  = z.substring(1) + z.charAt(0) + "ay" になるので、２番目の文字を先頭にそれ以降の文字
+//次に一文字目が後ろに来る。そして最後に"ay”がお尻にくっつく。
 
 //Thank you!
 const call = (xxx) => {
+
   console.log("Thank you for teaching me! Karl sensei and Lester sensei ");
   xxx();
 };

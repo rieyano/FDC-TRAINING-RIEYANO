@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <div id="fdc_div_element" style="background-color: purple; height: 500px; width: 100%"></div>
+    <button>你猜猜，我的颜色是什么颜色？</button>    
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "button" ).click(function() {
+      let color = $( "#fdc_div_element" ).css( "background-color");
+      alert("颜色"+color);
+    });
+  });
+  //これが正式の書き方！
+</script>
+</body>
+</html>
+
+

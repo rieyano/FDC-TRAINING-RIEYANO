@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Javascript Exercise</title>
+</head>
+<body>
+		1st Number: <input type="text" id='num1'><br><br>
+		2nd Number: <input type="text" id="num2"><br>
+		<hr>
+		<button onClick="calculate('product')">Multiply</button>
+		<button onClick="calculate('quotient')">Divide</button>
+		<button onClick="calculate('sum')">Add</button>
+		<button onClick="calculate('difference')">Subtract</button>
+		<p id="result">Result will be displayed here.</p>
+</body>
+<script type="text/javascript">
+	var num1 = num2 = 0;
+	var answer = 0;
+	var operator = '';
+
+	function calculate(operation) {
+		num1 = Number(document.getElementById('num1').value)
+		num2 = Number(document.getElementById('num2').value)
+
+		switch(operation) {
+			case 'sum':
+				answer = num1 + num2;
+				operator = '+';
+				break;
+			case 'difference':
+				answer = num1 - num2;
+				operator = '-';
+				break;
+			case 'product':
+				answer = num1 * num2;
+				operator = 'x';
+				break;
+			case 'quotient':
+				answer = num1 / num2;
+				operator = '/';
+				break;
+			default:
+				// do nothing
+		}
+
+		document.getElementById('result').innerHTML = num1 + " " + operator + " " + num2 + " = " + answer;
+	}
+</script>
+</html> 

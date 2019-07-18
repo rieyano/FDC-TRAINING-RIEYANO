@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <button>insert a div tag!</button>
+<div id="parent_fdc_div"></div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "button" ).click(function() {
+       $( "#parent_fdc_div" ).append("<div>我好讨厌JQUERY!!!!!!!!!!</div>" );  
+    });
+    setInterval(function(){
+        $( "#parent_fdc_div" ).append("<div>我好讨厌HTML!!!!!!!!!!!!</div>" );
+    }, 1200);
+  });
+
+  //これが正式の書き方！
+</script>
+</body>
+</html>
+
+

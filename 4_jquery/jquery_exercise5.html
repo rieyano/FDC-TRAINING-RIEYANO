@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <div id="fdc_div_element" style="height: 200px; width: 400px;"></div>
+<button>WHAT'S MY HEIGHT AND WIDTH?</button>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "button" ).click(function() {
+      let height = $( "#fdc_div_element" ).height( );
+      alert("height" + height);
+      let width = $( "#fdc_div_element" ).width( );
+      alert("width" + width);
+    });
+  });
+  //これが正式の書き方！
+</script>
+</body>
+</html>
+
+

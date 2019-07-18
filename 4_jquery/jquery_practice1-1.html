@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <h1>早上好！</h1>
+<h1>你好吗？</h1>
+<h1>为了自己我好好学习学习</h1>
+<h1>然后如果跟你有机会的话</h1>
+<h1>就我们一起做工作和一起干杯干杯吧！笑</h1>
+<h1>那么你工作加油加油！</h1>
+<h1>我该走！</h1>
+<h1>理荣</h1>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $( "h1" ).click(function() {
+      $( this ).fadeOut(1800);
+    });
+  });
+  //これが正式の書き方！
+
+  // $(function() {
+    
+  //$(".red_light").hide().delay(3000).fadeIn(3000);
+  //$(".red_light").css("background","red");
+
+  // $(".yellow_light").hide().delay(3000).fadeIn(3000);
+  //$(".yellow_light").css("background","white");
+
+  //$(".green_light").hide().delay(3000).fadeIn(3000);
+  //$(".green_light").css("background","green");
+
+
+
+  // $(".red_light").css({opacity:'0'});
+  //   setTimeout(function(){
+  //     $(".red_light").stop().animate({opacity:'1'},1000);
+  // },3000);
+
+</script>
+</body>
+</html>
+
+

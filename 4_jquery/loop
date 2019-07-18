@@ -1,0 +1,5 @@
+let number = 500;
+while (number >= 6000);{
+  console.log (numeber);
+  number =+ 1;
+}

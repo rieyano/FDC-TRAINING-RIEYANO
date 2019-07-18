@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>JQUERY - ACTIVITY 1</title>
+</head>
+<body>
+    <div id="traffic_light" style="border: 1px solid grey; padding: 10px; width: 52px;">
+        <div class="divtff red_light" style="height: 50px; width: 50px; border-radius: 25px; border: 1px solid grey;background:red"></div>
+        <div class="divtff yellow_light" style="height: 50px; width: 50px; border-radius: 25px; border: 1px solid grey;background:white"></div>
+        <div class="divtff green_light" style="height: 50px; width: 50px; border-radius: 25px; border: 1px solid grey;background:white"></div>
+      </div>
+      
+       
+          
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+  
+
+
+    
+    
+    
+    let tr = 0;
+	  setInterval(function(){
+      $(".divtff").css({background:'white'});
+        
+        if(tr == 0){
+          
+          $(".yellow_light").css({background:'yellow'});
+          tr = 1;
+        } else if(tr == 1){
+          $(".red_light").css({background:'red'});
+          
+          tr = 2;
+          } else if (tr == 2){
+          $(".green_light").css({background:'green'});
+          tr = 0;
+        } 
+
+        console.log(tr);
+	  },3000);
+
+
+  //これが正式の書き方！
+</script>
+</body>
+</html>
+
+
